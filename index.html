@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="box">
+
+        <h1> Real-time Character counter</h1>
+        <div class="cc">
+        <input class="inp" placeholder="Please write your text here..." oninput="ff()">
+        <div class="char">
+            <p class="hh">Total Character : 0</p>
+            <p class="hhh">Remaining : 50</p>
+        </div>
+    </div>
+    </div>
+
+    <script>
+
+        
+        function ff()
+        {
+            
+            let inp=document.querySelector(".inp").value;
+            let len=inp.length;
+            if(len<51)
+        {
+        let count=0;
+        let ll=document.querySelector(".hh");
+        ll.innerHTML="Total Character : "+len;
+        count=50-len;
+        let lll=document.querySelector(".hhh");
+        lll.innerHTML="Remaining : "+count;
+        }
+        else
+        {
+            alert("ONLY 50 Letters")
+        }
+
+        }
+    </script>
+</body>
+</html>

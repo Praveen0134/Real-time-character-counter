@@ -1,0 +1,36 @@
+.box
+{
+    border: 1px solid black;
+    padding: 30px;
+    width: 530px;
+    margin: 150px;
+    background-color: violet;
+}
+p
+{
+    display: inline;
+    
+}
+.char
+{
+  
+    display:flex;
+    justify-content: space-between;
+}
+input
+{
+    
+    width: 500px;
+    padding-top: 6px;
+    padding-left: 10px;
+    padding-bottom:80px ;
+}
+body
+{
+    display: flex;
+    justify-content: center;
+}
+.cc
+{
+    width: 500px;
+}
